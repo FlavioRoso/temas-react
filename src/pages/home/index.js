@@ -26,7 +26,7 @@ export default function Home() {
 
   
     
-
+    document.title = "Seletor de Tema em react"
    
 
     const handleChange = (value)=>{

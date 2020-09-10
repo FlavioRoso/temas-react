@@ -14,14 +14,21 @@ function App() {
 
   const [theme,setTheme] = useState(localStorage.getItem('theme'))
 
+  let themeRender ;
   if(!theme)
   {
-      setTheme('Dark')
+      setTheme('Dark');
+      localStorage.setItem('theme','Dark');
+      themeRender = ThemeLoader('Dark');
+  }
+  else
+  {
+      themeRender = ThemeLoader(theme);
   }
  
 
 
-  const themeRender = ThemeLoader(theme);
+  
  
   return (
 
