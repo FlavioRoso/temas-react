@@ -6,7 +6,7 @@ export const Container = styled.aside`
 
     position: Static;
     min-height: 100%;
-    background: ${props => props.theme.colors.secundary}
+    background: ${props => props.theme.settings.colors.secundary}
     
   
 `;

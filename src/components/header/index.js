@@ -1,33 +1,22 @@
-import React , { useContext }from 'react';
-import Switch from 'react-switch';
-import { ThemeContext } from 'styled-components';
+import React , { useContext, useState }from 'react';
+
 import { Container } from './styles';
 
 
 
 
-function Header() {
-    const theme =  useContext(ThemeContext);
-    let checked = true;
-    
-
-    const handleChange = ()=>{
-
-        checked = !checked;
- 
-        console.log(checked);
-    }
+function Header({ children }) {
+  
 
  
 
     return (
         <Container >
-            <button onClick={handleChange}></button>
-
-         
-
+            {children}
         </Container>
     );
 }
+
+
 
 export default Header;
