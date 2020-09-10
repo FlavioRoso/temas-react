@@ -75,7 +75,7 @@ export const Article = styled.article`
     @media screen and (max-width: 650px){
         h1{
             font-size: 50px;
-            font-weight: 600px
+            font-weight: 600px;
             margin-bottom: 70px;
         }
 
