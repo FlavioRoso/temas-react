@@ -4,13 +4,13 @@ export const Container = styled.header`
 
 
     width: 100%;
-    height: 50px;
+    height: fit-content;
     padding: 10px;
     background: ${props => props.theme.settings.colors.primary};
     display: flex;
     align-content: center;
-    justify-content: left;
+    justify-content: space-between;
 
-
+  
   
 `;

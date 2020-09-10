@@ -8,9 +8,14 @@ export const Dark = {
             primary: '#19A4FF',
             secundary: '#333',
             background: '#292928',
-            text: '#fff'
+            primaryText: '#f1f1f1',
+            secundaryText: '#292928'
+
         },
     
-        fonts:{}
+        fonts:{
+            title: "PT Serif" ,
+            text: "Fira Sans Extra Condensed"
+        }
     }
 }

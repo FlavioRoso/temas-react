@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from './styles'
 
-function Select({callback, children, initial}) {
+function Select({callback, children, label}) {
 
     const change = (event) =>{
         
@@ -12,7 +12,8 @@ function Select({callback, children, initial}) {
 
     return (
         <Container >
-            <select onChange={(event) => change(event)} >
+            <label>{label}</label>
+            <select  onChange={(event) => change(event)} >
                 {children}
             </select>
         </Container>

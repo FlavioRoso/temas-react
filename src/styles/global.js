@@ -2,10 +2,12 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
-    @font-face{
-        font-family: 'clock-font';
-        src:url('digital-7.ttf')
-    }
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fira+Sans+Extra+Condensed:wght@100;300&family=Open+Sans&family=PT+Serif&family=Playfair+Display&family=Roboto:wght@100;300;500&display=swap');
+
+@font-face{
+    font-family: 'clock-font';
+    src:url('digital-7.ttf')
+}
 
   
 /* RESET */

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Home from './pages/home'
 import { ThemeProvider } from 'styled-components';
@@ -12,15 +12,22 @@ import { ThemeLoader } from './styles/ThemeLoader';
 
 function App() {
 
+  const [theme,setTheme] = useState(localStorage.getItem('theme'))
+
+  if(!theme)
+  {
+      setTheme('Dark')
+  }
+ 
 
 
-  const theme = ThemeLoader('Dark');
+  const themeRender = ThemeLoader(theme);
  
   return (
 
     <>
       <GlobalStyle/>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themeRender}>
           <Home/>
       </ThemeProvider>
     </>

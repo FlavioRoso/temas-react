@@ -5,7 +5,7 @@ import { Container } from './styles';
 function MenuLateral() {
     return (
       <Container >
-  
+          
       </Container>
     );
 }
