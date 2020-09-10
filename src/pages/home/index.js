@@ -6,12 +6,15 @@ import Header from '../../components/header';
 import Main from '../../components/main';
 import MenuLateral from '../../components/menu-lateral';
 
+import Select from '../../components/select';
+
 
 //themes
 import { ThemeContext } from 'styled-components';
-import ToggleButton from '../../components/toggleButton'
-import { Light } from '../../styles/themes/light';
-import { Dark } from '../../styles/themes/dark';
+
+import { ListThemes, ThemeLoader } from '../../styles/ThemeLoader'
+
+
 
 
 export default function Home() {
@@ -19,29 +22,35 @@ export default function Home() {
 
 
     const theme =  useContext(ThemeContext);
-    let [checked,setChecked] = useState(true);
+    let [themeSelected,setThemeSelected] = useState(true);
 
    
 
-    const handleChange = (stateButton)=>{
+    const handleChange = (value)=>{
 
-
-
-        setChecked(stateButton);
-
-        theme.settings =  checked ? Light.settings : Dark.settings
-
-        console.log(theme.settings)
-
+        if(value)
+        {
+            setThemeSelected(value)
+            const newTheme = ThemeLoader(value)
+           
+            theme.settings =  newTheme.settings
+            console.log(theme.settings) 
+        }
     }
 
-   
+
         return (
             <Container>
                 <MenuLateral/>
                 <Principal>
                     <Header>
-                        <ToggleButton onClick={handleChange} initial={false}></ToggleButton>
+                        <Select callback={handleChange}>
+                            {
+                                ListThemes.map(row =>{
+                                    return <option value={row}>{row}</option>
+                                })
+                            }
+                        </Select>
                     </Header>
                      <Main>
                      

@@ -1,20 +1,26 @@
 import React from 'react';
 
 import Home from './pages/home'
-import {ThemeProvider} from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyle } from './styles/global';
 
-import { Dark } from './styles/themes/dark'
+import { ThemeLoader } from './styles/ThemeLoader';
+
 
 
 
 function App() {
+
+
+
+  const theme = ThemeLoader('Dark');
+ 
   return (
 
     <>
       <GlobalStyle/>
-      <ThemeProvider theme={Dark}>
+      <ThemeProvider theme={theme}>
           <Home/>
       </ThemeProvider>
     </>

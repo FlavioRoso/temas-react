@@ -11,14 +11,14 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "react-switch": "^5.0.1",
     "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "php -S localhost:8000"
   },
   "eslintConfig": {
     "extends": "react-app"

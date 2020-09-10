@@ -3,7 +3,7 @@
 export const Dark = {
 
     settings:{
-        name: 'dark',
+        name: 'Dark',
         colors: {
             primary: '#19A4FF',
             secundary: '#333',

@@ -1,4 +1,4 @@
-import React , { useContext, useState }from 'react';
+import React from 'react';
 
 import { Container } from './styles';
 
@@ -12,6 +12,7 @@ function Header({ children }) {
 
     return (
         <Container >
+            
             {children}
         </Container>
     );
