@@ -1,11 +1,14 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Logo } from './styles';
 
 function MenuLateral() {
     return (
       <Container >
-          
+          <Logo>
+              <img src="/logo192.png" alt="logo react"></img>
+              <p>Themes</p>
+          </Logo>
       </Container>
     );
 }

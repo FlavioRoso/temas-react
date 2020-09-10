@@ -12,7 +12,6 @@ function Header({ children }) {
 
     return (
         <Container >
-            
             {children}
         </Container>
     );

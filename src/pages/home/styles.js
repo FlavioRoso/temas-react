@@ -35,7 +35,12 @@ export const Text = styled.p`
         top: -5px
 
     }
-    
+
+
+    @media screen and (max-width: 1024px){
+        display: none;
+    }
+
 
   
 `;
@@ -53,17 +58,36 @@ export const Article = styled.article`
         font-size: 60px;
         font-family: ${props => props.theme.settings.fonts.title};
         color: ${props => props.theme.settings.colors.primaryText};
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     }
     h2{
         font-size: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         color: ${props => props.theme.settings.colors.primaryText};
     }
 
     p{
         font-size: 22px;
         margin-bottom: 15px;
+    }
+
+
+    @media screen and (max-width: 650px){
+        h1{
+            font-size: 50px;
+            font-weight: 600px
+            margin-bottom: 70px;
+        }
+
+        h2{
+            font-size: 40px;
+            margin-bottom: 100px;
+        }
+
+        p{
+            font-size: 30px;
+         
+        }
     }
   
 `;

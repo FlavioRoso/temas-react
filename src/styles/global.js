@@ -45,7 +45,7 @@ hr.marginTopTitulo { margin-top:50px; }
 
 /* BASE */
 html, body { height:100%; }
-body { color:#4D4D4D; font-size:14px; background:#F7F7F7; font-family: arial}
+body { color:#4D4D4D; font-size:14px; background:#F7F7F7; font-family: arial; margin: 0px; padding: 0px; min-height: 100%}
 #tudo { position:relative; float:left; width:100%; height:100%; min-width:320px; padding-top:40px;  }
 #container { float:left; width:100%; min-height:400px; padding:30px 0; overflow:hidden; }
 #container.zero { padding:0; }

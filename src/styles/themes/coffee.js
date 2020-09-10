@@ -15,8 +15,8 @@ export const Coffee = {
         },
     
         fonts:{
-            title: "'Abril Fatface', cursive" ,
-            text: "'Roboto 300', sans-serif"
+            title: "Abril Fatface, cursive" ,
+            text: "Fira Sans Extra Condensed"
         }
     }
 }
