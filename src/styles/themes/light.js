@@ -7,7 +7,7 @@ export const Light = {
     settings:{
         name: 'Light',
         colors: {
-            primary: '##19A4FF',
+            primary: '#19A4FF',
             secundary: '#f1f1f1',
             background: '#e6e6e6',
             primaryText: '#444',
