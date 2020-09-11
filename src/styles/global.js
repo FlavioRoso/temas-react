@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     border:0; 
     vertical-align:baseline; 
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
-    transition: all 0.2s linear;  -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear;
+    
   }
 /*  transition: all 0.2s linear;  -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; */
 
@@ -58,6 +58,12 @@ body { color:#4D4D4D; font-size:14px; background:#F7F7F7; font-family: arial; ma
 #container.zero { padding:0; }
 .meio-conteudo { width:90%; margin:0 auto; }
 .meio-conteudo.blog-detalhe { width:960px; }
+
+#root{
+    *{
+        transition: all 0.2s linear;  -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear;
+    }
+}
 
    
 
