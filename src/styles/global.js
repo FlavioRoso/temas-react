@@ -11,7 +11,14 @@ export const GlobalStyle = createGlobalStyle`
 
   
 /* RESET */
-* { margin:0; padding:0;  border:0; vertical-align:baseline;  -webkit-tap-highlight-color: rgba(0,0,0,0); }
+* { 
+    margin:0; 
+    padding:0;  
+    border:0; 
+    vertical-align:baseline; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    transition: all 0.2s linear;  -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear;
+  }
 /*  transition: all 0.2s linear;  -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; */
 
 
